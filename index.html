@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Controle</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+    <header> 
+        <div class="cabecalho">
+        <div id="nome-usuario"><b>Usuário</b>:</div>
+           <div class="logo">
+               <img src="imagens/logo_gcl.png" alt="Logo Grupo Carlos Lyra" title="Grupo Carlos Lyra">
+            </div>
+           <div class="titulo-cabecalho">
+                <h1>Controle dos Smartphones</h1>
+           </div>
+        </div>
+    </header>
+    <nav class="menu">
+        <ul>
+            <a href="cadastro.html">
+                <li>Cadastro</li>
+            </a>
+            <li class="sub">Monitoramento
+                <ul>
+                        <a href="https://myaccount.google.com/device-activity?continue=https%3A%2F%2Fmyaccount.google.com%2Fdata-and-privacy%3Fhl%3Dpt_BR&hl=pt_BR" target="_blank">
+                            <li style="border: none;">Dispositivos</li>
+                        </a>
+                        <a href="https://myactivity.google.com/activitycontrols/webandapp?view=item&hl=pt-BR" target="_blank">
+                            <li style="border: none;">Histórico</li>
+                        </a>
+                        <a href="https://myaccount.google.com/find-your-phone" target="_blank">
+                            <li style="border: none;">Encontrar</li>
+                        </a>
+                </ul>  
+            </li>
+            <a href="programas.html">
+                <li>Programas</li>
+            </a>
+            <a href="https://www.usinacaete.com/"  target="_blank">
+                <li >Sobre</li>
+            </a>
+            <a href="logout.php">
+                <li style="border: none;">Sair</li>
+            </a>    
+
+        </ul>
+        
+    </nav>
+    <main>        
+            <div class="div-tabela">
+                <table id="tabela">
+                    <tr id="tr1">
+                        <th>Coletor</th>
+                        <th>Modelo</th>
+                        <th>N° Chip</th>
+                        <th>Status</th>
+                        <th>Nome do Responsável</th>
+                        <th class="mbl-oculta">Crachá</th>
+                        <th class="mbl-oculta">Setor</th>
+                        <th id="alt">A/D</th>
+                    </tr>
+                    <tr id="tr2">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-transform: uppercase; font-size: 12px;"></td>
+                        <td style="text-transform: uppercase; font-size: 12px;"></td>
+                        <td class="mbl-oculta"></td>
+                        <td class="mbl-oculta" style="text-transform: uppercase; font-size: 12px;">/td>
+                        <td id="alt2"><div class="icon"><a href="alterar.php?id=<?php echo $dado["id"];?>"><img class="icone" src="imagens/alterar.png" alt="" title="Alterar Cadastro"></a></div>
+                        <div class="icon"><a href="javascript: if(confirm('Você deseja remover o COLETOR <?php echo $dado["coletor"]?>? Esta ação não poderá ser desfeita.')) location.href='deletar.php?&id=<?php echo $dado["id"];?>';"><img class="icone" src="imagens/delete.png" alt="" title="Deletar Cadastro"></a></div></td>
+                    </tr>
+                </table>
+            </div>
+    </main>
+    <footer class="footer">
+        <span class="direitos">
+            <address>
+                <p>&copy; by Alisson Souto - 2022 <br> CNPJ xx.xxx.xxx/xxx-xx - Todos os direitos reservados.</p>
+            </address>
+        </span>
+        <span class="links-sociais">
+        </span>
+    </footer>
+
+</body>
+</html>
