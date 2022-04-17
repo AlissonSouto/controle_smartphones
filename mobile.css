@@ -14,7 +14,7 @@
     }
     .cabecalho{
         width: 100%;
-        height: 150px;
+        height: 350px;
         background-color: rgb(5, 34, 78);
         padding: 40px 0px 20px 0px;
         border-radius: 10px 10px 0px 0px;
@@ -30,7 +30,7 @@
         width: 220px;
     }
     .titulo-cabecalho{
-        margin-top: -60px;
+        margin-top: 40px;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -40,15 +40,15 @@
     }
     .titulo-cabecalho h1{
         margin: auto;
-        margin-top: 30px;
-        font-size: 32px;
+        margin-top: 20px;
+        font-size: 42px;
     }
     #nome-usuario{
         font-style: italic;
         width: 200px;
         color: lightgray;
         text-align: right;
-        margin-left: 170%;
+        margin-left: 160%;
         margin-top: -10px;
         position: absolute;
         font-size: 22px;
@@ -57,11 +57,12 @@
         display: none;
     }
     .titulo-cabecalho h1.mbl-titulo{
-        margin-top: 100px;
+        margin-top: 80px;
     }
 
     /*nav*/
 nav.menu{
+    display: none;
     background-color: #c0c0c0;
     height: 50px;
     margin-right: auto;
@@ -111,22 +112,23 @@ nav.menu{
 /*main*/
 
 .cadastro-celulares{
-    width: 500px;
+    width: 587px;
     background-color: #f7fdd5;
     text-align: left;
-    border: solid 1px gray;
     border-radius: 8px;
     padding: 35px;
     padding-top: 17px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
-    box-shadow: 0px 5px 6px gray;
-    
+    margin-top: 30px;   
 }
 .cadastro-celulares input{
-    font-size: 15px;
+    font-size: 30px;
     border: solid 1px;
+    height: 30px;
+}
+.cadastro-celulares h3{
+    font-size: 28px;
 }
 .info-dispositivo{
     box-shadow: inset 0px 0px 3px gray;
@@ -134,6 +136,10 @@ nav.menu{
     border: solid 1px gray;
     padding: 15px;
     border-radius: 5px;
+    font-size: 22px;
+}
+.info-dispositivo select{
+    font-size: 20px;
 }
 .info-responsavel{
     box-shadow: inset 0px 0px 3px gray;
@@ -141,6 +147,13 @@ nav.menu{
     border: solid 1px gray;
     padding: 15px;
     border-radius: 5px;
+    font-size: 22px;
+}
+.info-responsavel p{
+    font-size: 25px !important;
+}
+#input-file{
+    font-size: 20px;
 }
 .input-cadastro{
     box-shadow: inset 0px 0px 2px gray;
@@ -176,15 +189,15 @@ nav.menu{
 }
 .select-h3{
     text-align: center;
-    font-size: 20px;
+    font-size: 23px;
 }
 form.form-programas{
     text-align: center;
 }
 #select-inst{
-    font-size: 15px;
-    width: 230px;
-    height: 50px;
+    font-size: 22px;
+    width: 250px;
+    height: 70px;
 }
 .download-modelo{
     list-style: none;
@@ -226,19 +239,20 @@ table#tabela{
 }
 #tabela th{
     border-right: solid 1px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 42px;
+    padding-right: 42px;
     margin-left: 10px;
     margin-right: 10px;
     color: lightgray;
     background-color: rgb(5, 34, 78);
+    font-size: 17px;
 }
 #tabela td{
     text-align: center;
     padding-top: 30px;
-    font-size: 14px;
+    font-size: 18px;
 }
 table#tabela tr#tr2{
     border-bottom: solid 1px gray;
@@ -304,8 +318,9 @@ table#tabela tr#tr2:hover{
     margin-right: auto;
 }
 #btn-enviar{
-    margin-top: 20px;
-    height: 35px;
+    margin-top: 50px;
+    height: 65px;
+    font-size: 25px;
 }
 #btn-alterar{
     margin-top: 20px;
@@ -319,6 +334,7 @@ table#tabela tr#tr2:hover{
     display: none;
 }
 #btn-programas{
+    margin-top: 20px;
     width: 150px;
     height: 50px;
     font-size: 15px;
